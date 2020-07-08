@@ -1,0 +1,14 @@
+a(href="/transactions/create") New rent
+
+ul
+	each trans in transactions
+		li
+			span userId:
+			span &nbsp;
+			span= trans.userId
+			br
+			span bookId:
+			span &nbsp;
+			span= trans.bookId
+			span &nbsp;
+			a(href="/transactions/" + trans.id +"/delete") Xóa
