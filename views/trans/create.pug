@@ -1,0 +1,20 @@
+form(action="/transactions/create", method="POST") 
+	lable User
+
+	select(name="userId")
+		ul
+			each user in users
+				option
+					li=user.id
+	br
+
+	lable Book
+
+	select(name="bookId")
+		ul
+			each book in books
+				option
+					li=book.id
+	br
+
+	button Create
